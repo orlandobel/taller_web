@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Formulario - 1</title>
+</head>
+<body>
+    <div class="d-flex justify-content-center">
+        <div class="col-lg-4 col-md-4 mt-3">
+            <div class="card">
+                <div class="card-body">
+                    <form action="form2.php" method="POST">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ap-paterno">Apellido Paterno</label>
+                            <input type="text" name="ap-paterno" id="ap-paterno" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ap-materno">Apellido Materno</label>
+                            <input type="text" name="ap-materno" id="ap-materno" class="form-control">
+                        </div>
+
+                        <div class="form-gruop row">
+                            <div class="col-sm-3">
+                                <label for="edad">Edad</label>
+                                <input type="number" name="edad" id="edad" class="form-control">
+                            </div>
+
+                            <div class="col-sm-5">
+                                <label for="">Sexo</label>
+                                <div class="from-group row">
+                                    <div class="col-sm-1">
+                                        <input type="radio" name="sexo" id="hombre" class="form-control" value="Hombre">
+                                    </div>
+                                    <label for="hombre" class="col-sm-5 col-form-label">Hombre</label>
+                                </div>
+
+                                <div class="fomr-group row">
+                                    <div class="col-sm-1">
+                                        <input type="radio" name="sexo" id="mujer" class="form-control" value="">
+                                    </div>
+                                    <label for="mujer" class="col-sm-5 col-form-label">Mujer</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Siguiente</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
