@@ -1,0 +1,70 @@
+.btn {
+    display: inline-block;
+    padding: 6px 16px;
+
+    border: none;
+    border-radius: 5px;
+
+    text-decoration: none;
+    color: black;
+    font-size: 16pt;
+
+    transition-duration: 0.4s;
+}
+
+
+/* btones con color de fondo */
+.btn-primary, .btn-success, .btn-warning, .btn-danger {
+    color: white;
+}
+
+.btn-primary {
+    background-color: rgb(25, 115, 231);
+}
+    .btn-primary:hover, .btn-border-primary:hover {
+        background-color: rgba(25, 115, 231,0.5);
+    }
+
+.btn-success {
+    background-color: rgb(52, 148, 39);
+}
+    .btn-success:hover, .btn-border-success:hover {
+        background-color: rgba(52, 148, 39,0.5);
+    }
+
+.btn-warning {
+    background-color: rgb(230, 226, 45);
+}
+    .btn-warning:hover, .btn-border-warning:hover {
+        background-color: rgba(230, 226, 45, 0.5);
+}
+
+.btn-danger {
+    background-color: rgb(236, 8, 8);
+}
+    .btn-danger:hover, .btn-border-danger:hover {
+        background-color: rgba(236, 8, 8,0.5);
+    }
+
+/* botones con borde*/
+.btn-border-primary, .btn-border-success, .btn-border-warning, .btn-border-danger {
+    background: none;
+    border-style: ridge;
+    border-width: 2px;
+}
+
+.btn-border-primary {
+    border-color: rgb(25, 115, 231);
+}
+
+.btn-border-success {
+    border-color: rgb(52, 148, 39);
+}
+
+.btn-border-warning {
+    border-color: rgb(230, 226, 45);
+}
+
+.btn-border-danger {
+    border-color: rgb(236, 8, 8);
+}
