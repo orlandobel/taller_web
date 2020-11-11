@@ -22,56 +22,7 @@
 
 <body>
     
-    <div class="header">
-        <div id="title">
-            <label>P o l i s t o r e</label>
-        </div>
-
-        <div class="search_bar">
-            <input type="text" class="search" placeholder="Search">
-            <button>
-                <i class="material-icons">search</i>
-            </button>
-        </div>
-    </div>
-    <br>
-    <div>
-		<div id="Menu">
-			<ul class="nav">
-				<li><a href="">Inicio</a></li>
-				<li><a href="">Departamentos</a>
-					<ul>
-						<li><a href="">Hogar</a></li>
-						<li><a href="">Computo y electrónica</a></li>
-                        <li><a href="">Videojuegos</a></li>
-                        <li><a href="">Celulares</a></li>
-						<li><a href="">Línea blanca</a>
-							<ul>
-								<li><a href="">Submenu1</a></li>
-								<li><a href="">Submenu2</a></li>
-                                <li><a href="">Submenu3</a></li>
-                                <li><a href="">Submenu4</a></li>
-								<li><a href="">Submenu5</a></li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li><a href="">Ofertas</a>
-					<ul>
-						<li><a href="">Mejores ofertas</a></li>
-						<li><a href="">Ofertas por categoría</a></li>
-                        <li><a href="">Dinero electrónico</a></li>
-                        <li><a href="">Ofertas Buen Fin 2020</a></li>
-                    </ul>
-                </li>
-				<li><a href="">Servicios</a></li>
-				</li>
-				<li><a href="">Contacto</a></li>
-			</ul>
-		</div>
-    
-
-	<head>
+  <head>
 		<title>Menu Desplegable</title>
 		<style type="text/css">
 			
@@ -128,7 +79,54 @@
 		</style>
     </head>
 
+    <div class="header">
+        <div id="title">
+            <label>P o l i s t o r e</label>
+        </div>
 
+        <div class="search_bar">
+            <input type="text" class="search" placeholder="Search">
+            <button>
+                <i class="material-icons">search</i>
+            </button>
+        </div>
+    </div>
+    <br>
+    <div>
+		<div id="Menu">
+			<ul class="nav">
+				<li><a href="">Inicio</a></li>
+				<li><a href="">Departamentos</a>
+					<ul>
+						<li><a href="">Hogar</a></li>
+						<li><a href="">Computo y electrónica</a></li>
+                        <li><a href="">Videojuegos</a></li>
+                        <li><a href="">Celulares</a></li>
+						<li><a href="">Línea blanca</a>
+							<ul>
+								<li><a href="">Submenu1</a></li>
+								<li><a href="">Submenu2</a></li>
+                                <li><a href="">Submenu3</a></li>
+                                <li><a href="">Submenu4</a></li>
+								<li><a href="">Submenu5</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="">Ofertas</a>
+					<ul>
+						<li><a href="">Mejores ofertas</a></li>
+						<li><a href="">Ofertas por categoría</a></li>
+                        <li><a href="">Dinero electrónico</a></li>
+                        <li><a href="">Ofertas Buen Fin 2020</a></li>
+                    </ul>
+                </li>
+				<li><a href="">Servicios</a></li>
+				</li>
+				<li><a href="">Contacto</a></li>
+			</ul>
+		</div>
+    
 <div class="w3-container">
   <h2>Bienvenidos a la tienda oficial IPN</h2>
 </div>
@@ -168,28 +166,10 @@
 
 </div>
 
-<script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-
-    function plusDivs(n) {
-        showDivs(slideIndex += n);
-    }
-
-    function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-    }
-    x[slideIndex-1].style.display = "block";  
-    }
-</script>
 <div class="w3-container">
   <h2>Populares en electrónica</h2>
 </div>
+
 <div class="w3-row-padding">
   <div class="w3-container w3-third">
     <img src="https://image.freepik.com/foto-gratis/tv-gabinete-sala-estar-moderna-tiene-plantas-libro-fondo-azul-pared-re-3d_41470-42.jpg" style="width:100%;cursor:pointer" 
@@ -211,18 +191,6 @@
     <img id="img01" style="width:100%">
   </div>
 </div>
-
-<script>
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-}
-</script>
-
-
-
-
-
 
 <div class="w3-container">
   <h2>Lo mejor para tu hogar</h2>
@@ -250,6 +218,33 @@ function onClick(element) {
     <img id="img01" style="width:100%">
   </div>
 </div>
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+    }
+</script>
+
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+</script>
 
 <script>
 function onClick(element) {
