@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <div class="form-control">
+        <form action="destino.php" method="POST">
+            <div class="form-group">
+                <label for="usuario">Nombre de usuario</label><br>
+                <input type="text" name="usuario" id="usuario"><br>
+            </div>
+    
+            <div>
+
+                <label for="ap_paterno">Apellido paterno</label><br>
+                <input type="text" name="ap_paterno" id="ap_paterno"><br>
+
+                <label for="ap_materno">Apellido Materno</label><br>
+                <input type="text" name="ap_materno" id="ap_materno"><br>
+            </div>
+    
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email"><br>
+    
+            <label for="pass">Contraseña</label><br>
+            <input type="password" name="pass" id="pass" required><br>
+            
+            <label for="edad">Edad</label><br>
+            <input type="number" name="edad" id="edad"><br>
+    
+            <label for="box">Box</label>
+            <input type="checkbox" name="deportes[]" id="box" value="Box"><br>
+            <label for="natacion">Natacion</label>
+            <input type="checkbox" name="deportes[]" id="natacion" value="Natacion"><br>
+            <label for="basquetbol">Basquetbol</label>
+            <input type="checkbox" name="deportes[]" id="basquetbol" value="Basquetbol"><br>
+            <br>
+            <label for="h">Hombre</label>
+            <input type="radio" name="genero" id="h" value="Hombre"><br>
+            <label for="m">Mujer</label>
+            <input type="radio" name="genero" id="m" value="Mujer"><br><br>
+    
+            <label for="ciudad">Ciudad</label>
+            <select name="ciudad" id="ciudad">
+                <option value="Zacatecas">Zacatecas</option>
+                <option value="Guadalupe">Guadalupe</option>
+                <option value="Rio Grande">Rio Grande</option>
+                <option value="Valparaiso">Valparaiso</option>
+            </select>
+            <br>
+    
+            <button type="submit">Enviar</button>
+        </form>
+
+    </div>
+</body>
+</html>
