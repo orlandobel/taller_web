@@ -1,0 +1,105 @@
+
+   
+    <style type="text/css">
+        
+        * {
+            margin:0px;
+            padding:0px;
+        }
+        
+        #header {
+            margin:auto;
+            width:500px;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        
+        ul, ol {
+            list-style:none;
+        }
+        
+        .nav > li {
+            float:left;
+        }
+        
+        .nav li a {
+            background-color:black;
+            color:#fff;
+            text-decoration:none;
+            padding:10px 100px;
+            display:block;
+        }
+        
+        .nav li a:hover {
+            background-color:#434343;
+        }
+        
+        .nav li ul {
+            display:none;
+            position:absolute;
+            min-width:140px;
+        }
+        
+        .nav li:hover > ul {
+            display:block;
+        }
+        
+        .nav li ul li {
+            position:relative;
+        }
+        
+        .nav li ul li ul {
+            right:-140px;
+            top:0px;
+        }
+        
+    </style>
+
+
+<div class="header">
+    <div id="title">
+        <label>P o l i s t o r e</label>
+    </div>
+
+    <div class="search_bar">
+        <input type="text" class="search" placeholder="Search">
+        <button>
+            <i class="material-icons">search</i>
+        </button>
+    </div>
+</div>
+<br>
+<div>
+    <div id="Menu">
+        <ul class="nav">
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Departamentos</a>
+                <ul>
+                    <li><a href="">Hogar</a></li>
+                    <li><a href="">Computo y electrónica</a></li>
+                    <li><a href="">Videojuegos</a></li>
+                    <li><a href="">Celulares</a></li>
+                    <li><a href="">Línea blanca</a>
+                        <ul>
+                            <li><a href="">Submenu1</a></li>
+                            <li><a href="">Submenu2</a></li>
+                            <li><a href="">Submenu3</a></li>
+                            <li><a href="">Submenu4</a></li>
+                            <li><a href="">Submenu5</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">Ofertas</a>
+                <ul>
+                    <li><a href="">Mejores ofertas</a></li>
+                    <li><a href="">Ofertas por categoría</a></li>
+                    <li><a href="">Dinero electrónico</a></li>
+                    <li><a href="">Ofertas Buen Fin 2020</a></li>
+                </ul>
+            </li>
+            <li><a href="">Servicios</a></li>
+            </li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </div>
+</div>
