@@ -1,0 +1,23 @@
+.appbar {
+    background-color: rgba(219, 219, 219, 0.63);
+}
+
+.appbar .title {
+    display: inline;
+    font-size: 35pt;
+}
+
+.app-icon {
+    height: 50px;
+    width: auto;
+}
+
+.deps, .search-bar {
+    display: inline;
+}
+
+.search-bar {
+    padding-top: 20px;
+    
+    float: right;
+}
