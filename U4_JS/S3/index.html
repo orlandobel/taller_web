@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border=1>
+        <thead>
+            <tr>
+                <th colspan="4">
+                    <input type="text" id="display" disabled>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="4">
+                    <input type="text" id="operacion" disabled>
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    <button onclick="limpiar();"> C </button>
+                </td>
+                <td>
+                    <button> <- </button>
+                </td>
+                <td>
+                    <button onclick="addOperando('/');"> / </button>
+                </td>
+                <td>
+                    <button onclick="addOperando('*');"> * </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button onclick="addNumero(7);"> 7 </button>
+                </td>
+                <td>
+                    <button onclick="addNumero(8);"> 8 </button>
+                </td>
+                <td>
+                    <button onclick="addNumero(9);"> 9 </button>
+                </td>
+                <td>
+                    <button onclick="addOperando('-');"> - </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button onclick="addNumero(4);"> 4 </button>
+                </td>
+                <td>
+                    <button onclick="addNumero(5);"> 5 </button>
+                </td>
+                <td>
+                    <button onclick="addNumero(6);"> 6 </button>
+                </td>
+                <td rowspan="2">
+                    <button onclick="addOperando('+');"> + </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button onclick="addNumero(1);"> 1 </button>
+                </td>
+                <td>
+                    <button onclick="addNumero(2);"> 2 </button>
+                </td>
+                <td>
+                    <button onclick="addNumero(3);"> 3 </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button onclick="addNumero(0);"> 0 </button>
+                </td>
+                <td>
+                    <button onclick="punto();"> . </button>
+                </td>
+                <td colspan="2">
+                    <button onclick="calcular();"> = </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="calculadora.js"></script>
+</body>
+</html>
