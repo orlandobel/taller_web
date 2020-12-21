@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="w-75 p-3">
+
+        <div class="card">
+            <form action="#" method="post">
+                <label for="usuario">Usuario</label>
+                <input type="text" name="usuario" id="usuario" class="form-control">
+                <label for="usuario" id="error_usuario" style="display: none;">El usuario no puede estar vacio</label>
+
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" class="form-control">
+                <label for="email" id="email_vacio" style="display: none;">El email no puede estar vacio</label>
+                <label for="email" id="email_invalido" style="display: none;">El email no es valido</label>
+
+                <label for="pass1">Contraseña</label>
+                <input type="text" name="pass" id="pass1" class="form-control">
+
+                <label for="pass2">Repita su contraseña</label>
+                <input type="text" name="pass" id="pass2" class="form-control">
+                <label id="pass_vacias" style="display: none;">Las contraseñas no pueden estar vacias</label>
+                <label id="pass_invalidas" style="display: none;">Las contraseñas no coinciden</label>
+
+                <button type="button" class="btn btn-primary" onclick="validarFormulario();">Enviar</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="form_control.js"></script>
+</body>
+
+</html>
