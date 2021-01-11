@@ -1,0 +1,46 @@
+.col-12 {
+    width: 80%;
+    margin: auto;
+}
+
+.card {
+    padding: 10px;
+    border-radius: 10px;
+
+    background-color: rgba(210,210,210,0.4);
+}
+
+.modal {
+    position: relative;
+    top: -400px;
+
+    transition: 0.5s;
+    transition-property: top;
+}
+
+.modal .header {
+    font-weight: bold;
+    font-size: 18pt;
+    padding-bottom: 10pt;
+    margin-bottom: 10px;
+
+    border-bottom: 1px solid gray;
+}
+
+.modal .body {
+    font-size: 12pt;
+    padding-bottom: 10pt;
+    margin-bottom: 10px;
+
+    border-bottom: 1px solid gray;
+}
+
+.modal .footer {
+    font-size: 9pt;
+}
+
+.modal .footer .right {
+    width: max-content;
+    margin-left: auto;
+}
+

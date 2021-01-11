@@ -1,0 +1,15 @@
+.btn {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.btn-danger {
+    background-color: red;
+    color: white;
+}
+
+.btn-primary {
+    background-color: rgb(75, 176, 209);
+    color: white;
+}
