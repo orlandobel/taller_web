@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/tables.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="modal" v-if="visible">
+            <div class="col-12">
+                <div class="card">
+                    <div class="body">
+                        <label for="nombre">Nombre</label><br>
+                        <input type="text" name="nombre" id="edit_nombre" v-model="usuario.nombre"><br><br>
+    
+                        <label for="email">Email</label><br>
+                        <input type="text" name="email" id="edit_email" v-model="usuario.email"><br><br>
+    
+                        <label for="pass">Pass</label><br><br>
+                        <input type="text" name="pass" id="edit_pass" v-model="usuario.pass">  <br>  <br>
+    
+                    </div>
+    
+                    <div class="footer">
+                        <div class="right">
+                            <button class="btn btn-danger" @click="hideModal();">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-12 ">
+            <div class="card">
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Email</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                            <tr v-for="usr of usuarios">
+                                <th>{{ usr.id }}</th>
+                                <td>{{ usr.nombre }}</td>
+                                <td>{{ usr.email }}</td>
+                                <td><button class="btn btn-primary" @click="showModal(usr);">Editar</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br><br>
+                    <button @click="postUsuario();">click</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>
+

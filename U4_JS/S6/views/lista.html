@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/tables.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="modal" id="editModal">
+        <div class="col-12">
+            <div class="card">
+                <div class="body">
+                    <label for="nombre">Nombre</label><br>
+                    <input type="text" name="nombre" id="edit_nombre"><br><br>
+
+                    <label for="email">Email</label><br>
+                    <input type="text" name="email" id="edit_email"><br><br>
+
+                    <label for="pass">Pass</label><br><br>
+                    <input type="text" name="pass" id="edit_pass">  <br>  <br>
+
+                </div>
+
+                <div class="footer">
+                    <div class="right">
+                        <button class="btn btn-danger" onclick="closeModal();">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 ">
+        
+        <div class="card">
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                        <th scope="col">Id</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Email</th>
+                    </thead>
+                    <tbody id="table-body">
+                    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="../js/jquery-3.5.1.js"></script>
+    <script src="../js/ajax.js"></script>
+</body>
+
+</html>
+

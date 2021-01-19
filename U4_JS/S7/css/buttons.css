@@ -1,0 +1,31 @@
+.btn {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.btn-danger {
+    background-color: red;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: rgb(243, 56, 56);
+}
+
+.btn-danger:active {
+    background-color: rgb(214, 10, 10);
+}
+
+.btn-primary {
+    background-color: rgb(75, 176, 209);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: rgb(116, 216, 250);
+}
+
+.btn-primary:active {
+    background-color: rgb(89, 166, 192);
+}

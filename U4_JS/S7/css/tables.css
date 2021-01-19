@@ -1,0 +1,14 @@
+.top {
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: 1%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
